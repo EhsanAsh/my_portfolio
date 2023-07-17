@@ -29,15 +29,28 @@
 ---
 ## Tasks:
 1. Add author's name, picture and links to; about, contact and work samples.
+2. Create a nav bar with related links inside. Connect each link to the corresponding section.
+3. Create a container, then add images related to applications and projects that has been done so far with proper title. connect that container to the related link.
+4. First application's image should be larger than the others.
+5. Define a link for each application's image inorder to connect that image to the related deployed application.
+6. Preper sample applications  and connect them to related section in the main webpage.
+7. Design and modify the webside with respect to Rsposive Web Design, so that the whole application functions properly through every viewport and screen size. 
+8. Test and run the application to make sure that every element and link is functioning.
+9. Provide a decent README file.
+10. Deploy the application through GitHub pages, then submit the live URL and code repositery's link. 
 
 ---
 ## Pattern Recognition:
+- Use CSS Reset
 - Use HTML semantic elements.
+- Use anchor tags and style them as button.
+- Connect each link to the corresponding section by using id.
+- Apply Flexbox, position property(if needed), media queries and proper relative units to make the website responsive
+- Use git and github to track every step and changes.
 
 ---
 ## Abstraction:
-- Ignore creating other pages.
-- Ignore loading projects.
+- Ignore functionalities related to Java Script for now.
 
 ---
 ## sequence:
