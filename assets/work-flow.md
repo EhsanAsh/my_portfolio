@@ -1,8 +1,9 @@
 # User Story:
 
-**AS AN employer**
+**AS AN employer:**
 >*I WANT* to view a potential employee's deployed portfolio of work samples
->*SO THAT I* can review samples of their work and assess whether they're a good >candidate for an open position.
+>*SO THAT I* can review samples of their work and assess whether they're a good candidate for an open position.
+
 ---
 
 # Acceptance Criteria:
@@ -19,23 +20,29 @@
     *THEN* I am taken to that deployed application
 6. *WHEN I* resize the page or view the site on various screens and devices
     *THEN* I am presented with a responsive layout that adapts to my viewport
+
 ---
 
 # Algorithm:
-**Create and deploy a portfolio website which contains work samples, contact, about and every related elements.**
+>Create and deploy a portfolio website which contains work samples, contact, about and every related elements.
+
 ---
 ## Tasks:
 1. Add author's name, picture and links to; about, contact and work samples.
+
 ---
 ## Pattern Recognition:
 - Use HTML semantic elements.
+
 ---
 ## Abstraction:
-*Ignore creating other pages*
-*Ignore loading projects*
+- Ignore creating other pages.
+- Ignore loading projects.
+
 ---
 ## sequence:
 **N/A**
+
 ---
 ## Debug:
 **N/A**
