@@ -32,11 +32,28 @@
     <!-- Used (https://www.w3schools.com/tags/ref_attributes.asp) as a tutorial guide-->
     <nav class="info">
       <ul class="list">
-        <li><a href="#about" target="_self" title="About Me" rel="About">About Me</a></li>
-        <li><a href="#work" target="_self" title="Apps">Work</a></li>
-        <li><a href="#contact" target="_self" title="Contact Me" rel="author">Contact Me</a></li>
-        <li><a href="./assets/public/resume.html" target="_blank" title="Resume">Resume</a></li>
-        <li><a href="https://github.com/EhsanAsh" target="_blank" title="GitHub Repo" rel="noopener">GitHub Repo</a>
+        <li>
+          <a href="#about" rel="About">About Me</a>
+        </li>
+        <!-- Creating a dropdown menu inside a list -->
+        <!-- Used (https://www.w3schools.com/howto/howto_css_dropdown.asp) as a tutorial guide -->
+        <li class="dropdown">
+          <a href="#">Work</a>
+          <div class="dropdown-content">
+            <a href="#app1" rel="bookmark">Pricing Panel</a>
+            <a href="#app2" rel="bookmark">Photosite</a>
+            <a href="#app3" rel="bookmark">Horiseon Marketing Webpage</a>
+            <a href="#app4" rel="bookmark">Python Projects</a>
+          </div>
+        </li>
+        <li>
+          <a href="#contact" rel="author">Contact Me</a>
+        </li>
+        <li>
+          <a href="./assets/public/resume.html" target="_blank">Resume</a>
+        </li>
+        <li>
+          <a href="https://github.com/EhsanAsh" target="_blank" rel="noopener">GitHub Repo</a>
         </li>
       </ul>
     </nav>
