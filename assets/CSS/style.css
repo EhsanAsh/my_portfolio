@@ -189,4 +189,11 @@ body{
   opacity: 0.6;
 }
 
+::selection{
+  background-color: rgba(252, 162, 17, 0.8);
+  color: #fff;
+}
+
+
+
 /* TODO: ToolTips + var*/
