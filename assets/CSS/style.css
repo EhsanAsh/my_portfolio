@@ -175,4 +175,18 @@ body{
 .hero a:hover {
   color: #ff7d00;
 }
-/* TODO: ToolTips */
+
+#my-pic{
+  position: relative;
+}
+
+#my-pic img{
+  position: absolute;
+  top:5em;
+  right: 0;
+  width: 20vw;
+  height: 60vh;
+  opacity: 0.6;
+}
+
+/* TODO: ToolTips + var*/
