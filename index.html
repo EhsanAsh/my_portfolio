@@ -6,17 +6,84 @@
   <meta name="description" content="A website for Ehsan Ashrafipour's Portfolio">
   <meta name="author" content="Ehsan Ashrafipour">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Creating a title with a link to the favicon.ico file to be used as the website's icon.-->
+  <!-- Used (https://www.w3schools.com/html/html_favicon.asp) as a tutorial guide.-->
   <title>Ehsan Ashrafipour Portfolio</title>
+  <link href="./assets/logo/Favicon.ico" rel="icon" type="image/x-icon">
   <link href="./assets/CSS/css-reset.css" rel="stylesheet">
   <link href="./assets/CSS/style.css" rel="stylesheet">
+  <!-- Creating a link to the google fonts that I used in the website.-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Quicksand&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-  <header>
+  <header class="bar">
+
+    <!-- Creating a logo for the website. The logo is a link to the home page.-->
+    <figure class="logo">
+      <a href="./index.html" target="_self" title="Home">
+        <img src="./assets/logo/SmallSquareLogoJpg.jpg" alt="Logo" draggable="false">
+      </a>
+    </figure>
+
+    <!-- Used (https://www.w3schools.com/tags/ref_attributes.asp) as a tutorial guide-->
+    <nav class="info">
+      <ul class="list">
+        <li>
+          <a href="#about" rel="About">About Me</a>
+        </li>
+        <!-- Creating a dropdown menu inside a list -->
+        <!-- Used (https://www.w3schools.com/howto/howto_css_dropdown.asp) as a tutorial guide -->
+        <li class="dropdown">
+          <a href="#">Work</a>
+          <div class="dropdown-content">
+            <a href="#app1" rel="bookmark">Pricing Panel</a>
+            <a href="#app2" rel="bookmark">Photosite</a>
+            <a href="#app3" rel="bookmark">Horiseon Marketing Webpage</a>
+            <a href="#app4" rel="bookmark">Python Projects</a>
+          </div>
+        </li>
+        <li>
+          <a href="#contact" rel="author">Contact Me</a>
+        </li>
+        <li>
+          <a href="./assets/public/resume.html" target="_blank">Resume</a>
+        </li>
+        <li>
+          <a href="https://github.com/EhsanAsh" target="_blank" rel="noopener">GitHub Repo</a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Creating a search input and submit button. The name refers to the kind of search that for example google uses as a name for the search bar.-->
+    <form action="https://www.google.ca/search" target="blank" method="get" id="search">
+      <input type="text" name="q" placeholder="Search Google" autofocus>
+      <input type="submit" value="Search">
+    </form>
+
   </header>
 
+  <!-- Creating a section for the hero image and the main text with  link button to github. Hero section-->
+  <section class="hero">
+    <figure id="hero-pic">
+    </figure>
+    <h1>Ehsan</h1>
+    <p>Full-stack Developer</p>
+    <h2>Portfolio</h2>
+    <div>
+      <a href="https://github.com/EhsanAsh" target="_blank" rel="noopener">
+        GitHub Repository
+      </a>
+    </div>
+  </section>
+
   <main>
+    <figure id="my-pic">
+      <img src="./assets/images/Ehsan.jpg" alt="Author's Photo" draggable="false">
+    </figure>
   </main>
 
   <footer>
