@@ -95,27 +95,32 @@ body{
 }
 
 #search{
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
+  background-color: #1D3557;
+  border-radius: 5px;
+  outline: none;
+  color: #fff;
+}
+
+#search::placeholder{
+  color: #fff;
+  font-size: 0.7rem;
 }
 
 /* selecting second input of form class search to add style */
-#search input:nth-of-type(2){
+#submit{
   font-size: 1rem;
   width: 5em;
-  height: 1.5em;
   text-align: center;
   border-radius: 5px;
   border: none;
-  background-color: rgba(29, 53, 87, 0.8);
-  color: #fca211;
+  color: #fff;
+  background-color: #1D3557;
   transition: all 0.3s ease-in-out;
 }
 
-#search input:nth-of-type(2):hover{
-  background-color: rgba(21, 97, 109, 0.8);
-  color: rgba(254, 245, 245, 0.7);
+#submit:hover{
+  background-color: rgba(29, 53, 87, 0.8);
+  color: rgba(234, 46, 73, 0.9);
   transform: translate(0, -2px);
 }
 
