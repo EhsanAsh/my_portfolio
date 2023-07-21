@@ -258,7 +258,7 @@ span {
   margin: 2%;
   border: none;
   transition: border-top 0.1s ease-in-out, border-right 0.1s ease-in-out 0.1s,
-    border-bottom 0.1s ease-in-out 0.3s, border-left 0.1s ease-in-out 0.4s;
+    border-bottom 0.1s ease-in-out 0.1s, border-left 0.1s ease-in-out 0.1s;
 }
 
 .main-card {
@@ -273,7 +273,7 @@ span {
 
 /* I'm trying to add a transition(which will be activated by hovering) to the border of the. I want each border to appear one after another*/
 .cards:hover,
-main-card:hover {
+.main-card:hover {
   box-shadow: 0 0 10px rgba(15, 77, 92, 0.8);
   border-top: 2px solid rgba(240, 166, 6, 0.866);
   border-right: 2px solid rgba(240, 166, 6, 0.866);
