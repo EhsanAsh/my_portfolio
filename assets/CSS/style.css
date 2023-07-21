@@ -240,4 +240,22 @@ h3{
   letter-spacing: 0.05em;
 }
 
+span{
+  font-weight: bold;
+  color:#415a77;
+}
+
+.projects{
+  width: 90%;
+  height: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 5% 15% 5% 0;
+  background-color: rgba(234, 46, 73, 0.902);
+}
+
+
+
 /* TODO: ToolTips + var + flex-item+ search input*/
