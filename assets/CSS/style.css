@@ -272,21 +272,34 @@ span {
   border-left: 2px solid rgba(240, 166, 6, 0.866);
 }
 
-.app-font {
+#app-main-font {
   display: inline-block;
   font-size: 2rem;
   margin: 3%;
-  color: #1d3557;
-  font-weight: bold;
+  letter-spacing: 0.1em;
+  font-family: "Bungee Spice", cursive;
+}
+
+#app-main-img {
+  width: 70%;
+  opacity: 0.9;
+  margin: 2% 0 8% 15%;
+  border-radius: 5%;
+}
+
+.app-font {
+  display: inline-block;
+  font-size: 1.2rem;
+  margin: 2%;
   letter-spacing: 0.1em;
   font-family: "Bungee Spice", cursive;
 }
 
 .app-img {
-  width: 70%;
+  width: 50%;
   opacity: 0.9;
-  margin: 2% 0 8% 15%;
-  border-radius: 5%;
+  margin: 3%;
+  border-radius: 2%;
 }
 
 .contact-me {
