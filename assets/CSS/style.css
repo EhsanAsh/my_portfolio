@@ -251,22 +251,22 @@ span{
   display: flex;
   flex-flow: column nowrap;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: center;
   margin: 5% 15% 5% 0;
   background-color: rgba(234, 46, 73, 0.902);
 }
 
 .app-font{
-  display: inline-block;
-  font-size: 1.5rem;
-  margin:5%;
+  align-self: flex-start;
+  font-size: 2rem;
+  margin:2%;
   color: #1D3557;
   font-weight: bold;
-  /* letter-spacing: 0.1em; */
+  letter-spacing: 0.1em;
 }
 
 .app-link{
-  display: inline;
+  margin: 2%;
 }
 
 /* TODO: ToolTips + var + flex-item+ search input*/
