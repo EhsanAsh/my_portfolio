@@ -204,4 +204,21 @@ body{
   background-color: rgba(246, 247, 146, 0.9);
 }
 
+.bio-card{
+  align-self: flex-end;
+  display:flex;
+  justify-content: flex-end;
+  width: 50%;
+  height: 100%;
+}
+
+#my-pic{
+  width: 50%;
+  height: 50%;
+  opacity: 0.8;
+  margin: 5%;
+  border-radius: 5%;
+}
+
+
 /* TODO: ToolTips + var + flex-item+ search input*/
