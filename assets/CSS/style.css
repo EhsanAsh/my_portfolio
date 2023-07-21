@@ -154,6 +154,8 @@ body{
 
 .hero h2 {
   font-size: 2em;
+  letter-spacing: 0.5em;
+  font-weight: bold;
 }
 
 .hero p {
@@ -216,9 +218,34 @@ body{
   width: 50%;
   height: 50%;
   opacity: 0.8;
-  margin: 5%;
+  margin: 8% 5% 0 0;
   border-radius: 5%;
 }
 
+.bio-info{
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  margin: 0 3% 3% 3%;
+
+}
+
+h3{
+  font-size: 2rem;
+  margin: 2%;
+  color: #1D3557;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+
+}
+
+.bio-info p{
+  font-size: 1.5rem;
+  margin: 2%;
+  float: left;
+  color: #1D3557;
+  line-height: 1.5;
+  letter-spacing: normal;
+}
 
 /* TODO: ToolTips + var + flex-item+ search input*/
