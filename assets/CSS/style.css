@@ -270,7 +270,7 @@ span{
   margin: 2%;
 }
 
-.contact{
+.contact-me{
   width: 90%;
   height: 100%;
   display: flex;
@@ -281,7 +281,7 @@ span{
   background-color: rgba(51, 55, 69, 0.8);
 }
 
-.contact h3{
+.contact-me h3{
   font-size: 2rem;
   margin:2%;
   color: rgba(234, 46, 73, 0.9);
@@ -289,7 +289,7 @@ span{
   letter-spacing: 0.1em;
 }
 
-.contact a, .contact span{
+.contact-me a, .contact-me span{
   text-decoration: none;
   font-size: 1.5rem;
   margin:2%;
