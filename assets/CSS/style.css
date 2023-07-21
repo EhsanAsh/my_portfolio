@@ -246,28 +246,47 @@ span {
   color: #415a77;
 }
 
-.projects {
-  width: 90%;
+/* Used (https://www.w3schools.com/css/css3_transitions.asp) as a tutorial guide */
+.cards {
+  align-self: center;
+  width: 50%;
   height: 100%;
   display: flex;
   flex-flow: column nowrap;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
-  margin: 5% 15% 5% 0;
-  background-color: rgba(234, 46, 73, 0.9);
+  margin: 2%;
+  background-color: #e9edc9;
+  border: none;
+  border-radius: 5%;
+  transition: border-top 0.1s ease-in-out, border-right 0.1s ease-in-out 0.1s,
+    border-bottom 0.1s ease-in-out 0.3s, border-left 0.1s ease-in-out 0.4s;
+}
+
+/* I'm trying to add a transition(which will be activated by hovering) to the border of the   . I want each border to appear one after another*/
+.cards:hover {
+  box-shadow: 0 0 10px rgba(15, 77, 92, 0.8);
+  border-top: 2px solid rgba(240, 166, 6, 0.866);
+  border-right: 2px solid rgba(240, 166, 6, 0.866);
+  border-bottom: 2px solid rgba(240, 166, 6, 0.866);
+  border-left: 2px solid rgba(240, 166, 6, 0.866);
 }
 
 .app-font {
-  align-self: flex-start;
+  display: inline-block;
   font-size: 2rem;
-  margin: 2%;
+  margin: 3%;
   color: #1d3557;
   font-weight: bold;
   letter-spacing: 0.1em;
+  font-family: "Bungee Spice", cursive;
 }
 
-.app-link {
-  margin: 2%;
+.app-img {
+  width: 70%;
+  opacity: 0.9;
+  margin: 2% 0 8% 15%;
+  border-radius: 5%;
 }
 
 .contact-me {
@@ -307,6 +326,7 @@ span {
   font-size: 1.5rem;
 }
 
+/* Adding phone number after span inside the footer */
 #contact-links span::after {
   content: " 647-448-1636";
   font-family: "Bungee Spice", cursive;
