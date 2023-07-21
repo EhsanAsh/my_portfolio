@@ -222,30 +222,22 @@ body{
   border-radius: 5%;
 }
 
-.bio-info{
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: center;
-  margin: 0 3% 3% 3%;
-
-}
-
 h3{
   font-size: 2rem;
-  margin: 2%;
+  margin: 5% 5% 2% 5%;
   color: #1D3557;
   font-weight: bold;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.2em;
 
 }
 
-.bio-info p{
+.bio p{
   font-size: 1.5rem;
-  margin: 2%;
+  margin: 2% 5% 5% 5%;
   float: left;
   color: #1D3557;
-  line-height: 1.5;
-  letter-spacing: normal;
+  line-height: 1.7;
+  letter-spacing: 0.05em;
 }
 
 /* TODO: ToolTips + var + flex-item+ search input*/
