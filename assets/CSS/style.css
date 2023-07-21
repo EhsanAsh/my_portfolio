@@ -191,7 +191,7 @@ body{
   flex-flow: column nowrap;
   justify-content: space-around;
   align-items: flex-start;
-  margin: 15% auto 3% auto;
+  margin: 15% auto 0 auto;
   background-color: rgba(119, 196, 211, 0.9);
 }
 
@@ -253,7 +253,7 @@ span{
   justify-content: space-between;
   align-items: center;
   margin: 5% 15% 5% 0;
-  background-color: rgba(234, 46, 73, 0.902);
+  background-color: rgba(234, 46, 73, 0.9);
 }
 
 .app-font{
@@ -269,4 +269,35 @@ span{
   margin: 2%;
 }
 
-/* TODO: ToolTips + var + flex-item+ search input*/
+.contact{
+  width: 90%;
+  height: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 0 15% 5% 0;
+  background-color: rgba(51, 55, 69, 0.8);
+}
+
+.contact h3{
+  font-size: 2rem;
+  margin:2%;
+  color: rgba(234, 46, 73, 0.9);
+  font-weight: bold;
+  letter-spacing: 0.1em;
+}
+
+.contact a, .contact span{
+  text-decoration: none;
+  font-size: 1.5rem;
+  margin:2%;
+  color: rgba(234, 46, 73, 0.9);
+}
+
+#copy-right{
+  font-size: 1rem;
+  margin:2%;
+  color: rgba(234, 46, 73, 0.9);
+}
+/* TODO: ToolTips + var + flex-item+ search input + add more style to contact links+ add containers and style them in all sections.+ modify spans+modify contact me*/
