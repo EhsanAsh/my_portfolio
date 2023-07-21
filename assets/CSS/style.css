@@ -222,7 +222,7 @@ body{
   border-radius: 5%;
 }
 
-h3{
+.bio h3{
   font-size: 2rem;
   margin: 5% 5% 2% 5%;
   color: #1D3557;
@@ -250,12 +250,23 @@ span{
   height: 100%;
   display: flex;
   flex-flow: column nowrap;
-  justify-content: center;
+  justify-content: space-between;
   align-items: flex-start;
   margin: 5% 15% 5% 0;
   background-color: rgba(234, 46, 73, 0.902);
 }
 
+.app-font{
+  display: inline-block;
+  font-size: 1.5rem;
+  margin:5%;
+  color: #1D3557;
+  font-weight: bold;
+  /* letter-spacing: 0.1em; */
+}
 
+.app-link{
+  display: inline;
+}
 
 /* TODO: ToolTips + var + flex-item+ search input*/
