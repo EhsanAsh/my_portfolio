@@ -246,32 +246,29 @@ span {
   color: #415a77;
 }
 
-/* Used (https://www.w3schools.com/css/css3_transitions.asp) as a tutorial guide */
-.cards,
-.main-card {
-  align-self: center;
+.cards-container {
   display: flex;
-  flex-flow: column nowrap;
+  flex-flow: row wrap;
   justify-content: space-evenly;
   align-items: center;
+  /* Todo add style to the container */
+}
+
+/* Embeding containers inside the main container. */
+.cards,
+.main-card {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: center;
   background-color: #e9edc9;
-  margin: 2%;
   border: none;
   transition: border-top 0.1s ease-in-out, border-right 0.1s ease-in-out 0.1s,
     border-bottom 0.1s ease-in-out 0.1s, border-left 0.1s ease-in-out 0.1s;
 }
 
-.main-card {
-  width: 50%;
-  border-radius: 5%;
-}
-
-.cards {
-  width: 30%;
-  border-radius: 10px;
-}
-
 /* I'm trying to add a transition(which will be activated by hovering) to the border of the. I want each border to appear one after another*/
+/* Used (https://www.w3schools.com/css/css3_transitions.asp) as a tutorial guide */
 .cards:hover,
 .main-card:hover {
   box-shadow: 0 0 10px rgba(15, 77, 92, 0.8);
@@ -281,9 +278,18 @@ span {
   border-left: 2px solid rgba(240, 166, 6, 0.866);
 }
 
+.main-card {
+  flex-grow: 4;
+  width: 80%;
+  height: 30rem;
+  margin: 2% 20%;
+  border-radius: 15px;
+}
+
+/* Adding style to first card seperately */
 #app-main-font {
   display: inline-block;
-  font-size: 2rem;
+  font-size: 3rem;
   margin: 3%;
   letter-spacing: 0.1em;
   font-family: "Bungee Spice", cursive;
@@ -292,23 +298,40 @@ span {
 #app-main-img {
   width: 70%;
   opacity: 0.9;
-  margin: 2% 0 8% 15%;
+  margin: 2% 0 20% 15%;
   border-radius: 5%;
 }
 
+.cards {
+  flex-grow: 1;
+  width: 20rem;
+  height: 15rem;
+  border-radius: 10px;
+  margin: 2%;
+}
+
+/* Adding style to other cards inorder to make them smaller than the first card. */
 .app-font {
   display: inline-block;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   margin: 2% 2% 0 2%;
   letter-spacing: 0.1em;
   font-family: "Bungee Spice", cursive;
 }
 
-.app-img {
-  width: 50%;
+.app-img,
+.app-img-last {
+  width: 80%;
   opacity: 0.9;
-  margin: 3% 3% 3% 25%;
   border-radius: 5px;
+}
+
+.app-img-last {
+  margin: 5% 3% 3% 10%;
+}
+
+.app-img {
+  margin: 9% 3% 3% 10%;
 }
 
 .contact-me {
