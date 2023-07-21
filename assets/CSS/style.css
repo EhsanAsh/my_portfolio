@@ -198,49 +198,42 @@ body{
   background-color: rgba(119, 196, 211, 0.9);
 }
 
+
 .bio{
   width: 90%;
   height: 100%;
   display: flex;
-  flex-flow: column nowrap;
+  flex-flow: row nowrap;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   margin: 10% 0 5% 15%;
-  background-color: rgba(246, 247, 146, 0.9);
-}
-
-.bio-card{
-  align-self: flex-end;
-  display:flex;
-  justify-content: flex-end;
-  width: 50%;
-  height: 100%;
+  background-color: rgba(246, 247, 146, 0.7);
 }
 
 #my-pic{
-  width: 50%;
-  height: 50%;
+  width: 25%;
+  height: 25%;
   opacity: 0.8;
-  margin: 8% 5% 0 0;
+  margin: 3%;
   border-radius: 5%;
+  float: right;
 }
 
 .bio h3{
+  display: inline-block;
   font-size: 2rem;
   margin: 5% 5% 2% 5%;
   color: #1D3557;
   font-weight: bold;
   letter-spacing: 0.2em;
-
 }
 
 .bio p{
   font-size: 1.5rem;
   margin: 2% 5% 5% 5%;
-  float: left;
   color: #1D3557;
-  line-height: 1.7;
-  letter-spacing: 0.05em;
+  line-height:1.7;
+  letter-spacing: 0.1em;
 }
 
 span{
@@ -303,4 +296,4 @@ span{
   margin:2%;
   color: rgba(234, 46, 73, 0.9);
 }
-/* TODO: ToolTips + var + flex-item+ search input + add more style to contact links+ add containers and style them in all sections.+ modify spans+modify contact me*/
+/* TODO: ToolTips + var + search input + add more style to contact links+ add containers and style them, in all sections.+ modify spans+modify contact me+responsive*/
