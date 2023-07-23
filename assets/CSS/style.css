@@ -260,7 +260,7 @@ span {
   flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
-  background-color: #e9edc9;
+  background-color: rgba(69, 123, 157, 0.3);
   border: none;
   transition: border-top 0.1s ease-in-out, border-right 0.1s ease-in-out 0.1s,
     border-bottom 0.1s ease-in-out 0.1s, border-left 0.1s ease-in-out 0.1s;
@@ -271,10 +271,10 @@ span {
 .cards:hover,
 .main-card:hover {
   box-shadow: 0 0 10px rgba(15, 77, 92, 0.8);
-  border-top: 2px solid rgba(240, 166, 6, 0.866);
-  border-right: 2px solid rgba(240, 166, 6, 0.866);
-  border-bottom: 2px solid rgba(240, 166, 6, 0.866);
-  border-left: 2px solid rgba(240, 166, 6, 0.866);
+  border-top: 2px solid #457b9d;
+  border-right: 2px solid #457b9d;
+  border-bottom: 2px solid #457b9d;
+  border-left: 2px solid #457b9d;
 }
 
 .main-card {
@@ -284,21 +284,6 @@ span {
   border-radius: 2em;
 }
 
-/* Adding style to first card seperately */
-#app-main-font {
-  display: inline-block;
-  font-size: 2.5rem;
-  margin: 5%;
-  font-family: "Bungee Spice", cursive;
-}
-
-#app-main-img {
-  width: 70%;
-  opacity: 0.9;
-  margin: 2% 0 10% 15%;
-  border-radius: 5%;
-}
-
 .cards {
   width: 20rem;
   height: auto;
@@ -306,12 +291,28 @@ span {
   margin: 2rem;
 }
 
-/* Adding style to other cards inorder to make them smaller than the first card. */
+#app-main-font,
 .app-font {
   display: inline-block;
+  color: #780000;
+  font-weight: bold;
+}
+
+#app-main-font {
+  font-size: 2.5rem;
+  margin: 5%;
+}
+
+.app-font {
   font-size: 1.5rem;
   margin: 4% 2% 0 2%;
-  font-family: "Bungee Spice", cursive;
+}
+
+#app-main-img {
+  width: 70%;
+  opacity: 0.9;
+  margin: 2% 0 10% 15%;
+  border-radius: 5%;
 }
 
 .app-img,
