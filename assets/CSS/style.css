@@ -278,9 +278,8 @@ span {
 }
 
 .main-card {
-  flex-grow: 4;
   width: 80%;
-  height: 30rem;
+  height: auto;
   margin: 2% 20%;
   border-radius: 2em;
 }
@@ -302,11 +301,10 @@ span {
 }
 
 .cards {
-  flex-grow: 1;
   width: 20rem;
-  height: 15rem;
+  height: auto;
   border-radius: 1em;
-  margin: 2%;
+  margin: 2rem;
 }
 
 /* Adding style to other cards inorder to make them smaller than the first card. */
