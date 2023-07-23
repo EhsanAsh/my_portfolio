@@ -258,7 +258,7 @@ span {
 .main-card {
   display: flex;
   flex-flow: column nowrap;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
   background-color: #e9edc9;
   border: none;
@@ -278,7 +278,7 @@ span {
 }
 
 .main-card {
-  width: 80%;
+  width: 40%;
   height: auto;
   margin: 2% 20%;
   border-radius: 2em;
@@ -287,16 +287,15 @@ span {
 /* Adding style to first card seperately */
 #app-main-font {
   display: inline-block;
-  font-size: 3rem;
-  margin: 3%;
-  letter-spacing: 0.1em;
+  font-size: 2.5rem;
+  margin: 5%;
   font-family: "Bungee Spice", cursive;
 }
 
 #app-main-img {
   width: 70%;
   opacity: 0.9;
-  margin: 2% 0 20% 15%;
+  margin: 2% 0 10% 15%;
   border-radius: 5%;
 }
 
@@ -311,24 +310,26 @@ span {
 .app-font {
   display: inline-block;
   font-size: 1.5rem;
-  margin: 2% 2% 0 2%;
-  letter-spacing: 0.1em;
+  margin: 4% 2% 0 2%;
   font-family: "Bungee Spice", cursive;
 }
 
 .app-img,
 .app-img-last {
-  width: 80%;
   opacity: 0.9;
   border-radius: 0.7em;
 }
 
 .app-img-last {
-  margin: 5% 3% 3% 10%;
+  width: 50%;
+  height: auto;
+  margin: 5% 25%;
 }
 
 .app-img {
-  margin: 9% 3% 3% 10%;
+  width: 80%;
+  height: auto;
+  margin: 5% 3% 3% 10%;
 }
 
 .contact-me {
