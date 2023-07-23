@@ -16,6 +16,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Quicksand&display=swap" rel="stylesheet">
+  <!-- Creating a link to the font awesome website to use the icons.-->
+  <!-- Used (https://www.w3schools.com/howto/howto_css_searchbar.asp) as a tutorial guide.-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -61,8 +64,8 @@
 
     <!-- Creating a search input and submit button. The name refers to the kind of search that for example google uses as a name for the search bar.-->
     <form action="https://www.google.ca/search" target="blank" method="get">
-      <input type="text" name="q" placeholder="Search Google" autofocus id="search">
-      <input type="submit" value="Search" id="submit">
+      <input type="text" name="q" placeholder="Search..." autofocus id="search">
+      <button type="submit" title="Search Google" id="submit"><i class="fa fa-search"></i></button>
     </form>
 
   </header>
