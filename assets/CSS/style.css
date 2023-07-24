@@ -246,9 +246,10 @@ span {
 
 .cards-container {
   display: flex;
-  flex-flow: row wrap;
-  justify-content: space-evenly;
+  flex-flow: column nowrap;
+  justify-content: center;
   align-items: center;
+  padding: 1%;
   /* Todo add style to the container */
 }
 
@@ -261,6 +262,10 @@ span {
   align-items: center;
   background-color: rgba(69, 123, 157, 0.3);
   border: none;
+  height: auto;
+  margin: 1% auto;
+  padding: 1%;
+  border-radius: 2em;
   transition: border-top 0.1s ease-in-out, border-right 0.1s ease-in-out 0.2s,
     border-bottom 0.1s ease-in-out 0.2s, border-left 0.1s ease-in-out 0.2s;
 }
@@ -269,67 +274,41 @@ span {
 /* Used (https://www.w3schools.com/css/css3_transitions.asp) as a tutorial guide */
 .cards:hover,
 .main-card:hover {
-  box-shadow: 0 0 10px rgba(15, 77, 92, 0.8);
-  border-top: 2px solid #457b9d;
-  border-right: 2px solid #457b9d;
-  border-bottom: 2px solid #457b9d;
-  border-left: 2px solid #457b9d;
+  box-shadow: 0 0 0.6em rgba(15, 77, 92, 0.8);
+  border-top: 0.2em solid #457b9d;
+  border-right: 0.2em solid #457b9d;
+  border-bottom: 0.2em solid #457b9d;
+  border-left: 0.2em solid #457b9d;
 }
 
 .main-card {
-  width: 30rem;
-  height: auto;
-  margin: 2% 20%;
-  border-radius: 2em;
+  width: 60%;
 }
 
 .cards {
-  width: 20rem;
-  height: auto;
-  border-radius: 1em;
-  margin: 2rem;
+  width: 50%;
 }
 
 #app-main-font,
 .app-font {
-  display: inline-block;
   color: #780000;
   font-weight: bold;
+  margin: 3%;
 }
 
 #app-main-font {
-  font-size: 2.5rem;
-  margin: 5%;
+  font-size: 3rem;
 }
 
 .app-font {
-  font-size: 1.5rem;
-  margin: 4% 2% 0 2%;
-}
-
-#app-main-img {
-  width: 70%;
-  opacity: 0.9;
-  margin: 2% 0 10% 15%;
-  border-radius: 5%;
-}
-
-.app-img,
-.app-img-last {
-  opacity: 0.9;
-  border-radius: 0.7em;
-}
-
-.app-img-last {
-  width: 50%;
-  height: auto;
-  margin: 5% 25%;
+  font-size: 2rem;
 }
 
 .app-img {
-  width: 80%;
+  width: 100%;
   height: auto;
-  margin: 5% 3% 3% 10%;
+  opacity: 0.9;
+  border-radius: 1em;
 }
 
 .contact-me {
@@ -472,12 +451,21 @@ span {
   }
 
   #app-main-font {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
+    margin: 3%;
   }
 
   .app-font {
     font-size: 1rem;
   }
+
+  #app-main-img {
+    width: 50%;
+    /* margin: 2% 0 3% 20%; */
+    border-radius: 4%;
+  }
 }
+
+/* Fourth break point at 600px */
 
 /* TODO: ToolTips + var + search input + add more style to contact links+ add containers and style them, in all sections.+ modify spans+modify contact me+responsive*/
