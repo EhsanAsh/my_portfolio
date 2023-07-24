@@ -406,7 +406,7 @@ span {
   }
 }
 
-/* Sexond brake-point at 900px */
+/* Second brake-point at 900px */
 @media only screen and (max-width: 900px) {
   .bar,
   .hero p {
@@ -447,6 +447,36 @@ span {
 
   #copy-right {
     font-size: 0.7rem;
+  }
+}
+
+/* Third break point at 785px */
+@media only screen and (max-width: 785px) {
+  .main-content {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .bio {
+    margin-left: 20%;
+  }
+
+  .cards-container {
+    flex-flow: column nowrap;
+  }
+
+  .main-card,
+  .cards {
+    margin: 0.7rem;
+    border-radius: 0.7rem;
+  }
+
+  #app-main-font {
+    font-size: 1.5rem;
+  }
+
+  .app-font {
+    font-size: 1rem;
   }
 }
 
