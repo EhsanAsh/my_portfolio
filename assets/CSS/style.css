@@ -137,7 +137,7 @@ body {
 
 #hero-pic {
   width: 100%;
-  height: 100%;
+  height: auto;
 }
 
 .hero h1,
@@ -159,14 +159,14 @@ body {
 }
 
 .hero h2 {
-  font-size: 2em;
+  font-size: 2rem;
   letter-spacing: 0.5em;
   font-weight: bold;
   margin-left: 0.5em;
 }
 
 .hero p {
-  font-size: 1.2em;
+  font-size: 1.2rem;
 }
 
 .hero div {
@@ -179,7 +179,7 @@ body {
   color: #fff;
   background-color: #1d3557;
   padding: 0.5em 1em;
-  border-radius: 5px;
+  border-radius: 3.1em;
 }
 
 .hero a:hover {
@@ -193,7 +193,7 @@ body {
 
 .main-content {
   width: 90%;
-  height: 100%;
+  height: auto;
   display: flex;
   flex-flow: column nowrap;
   justify-content: space-around;
@@ -204,7 +204,7 @@ body {
 
 .bio {
   width: 90%;
-  height: 100%;
+  height: auto;
   display: flex;
   flex-flow: row nowrap;
   justify-content: center;
@@ -215,7 +215,7 @@ body {
 
 #my-pic {
   width: 25%;
-  height: 25%;
+  height: auto;
   opacity: 0.8;
   margin: 3%;
   border-radius: 5%;
@@ -261,8 +261,8 @@ span {
   align-items: center;
   background-color: rgba(69, 123, 157, 0.3);
   border: none;
-  transition: border-top 0.1s ease-in-out, border-right 0.1s ease-in-out 0.1s,
-    border-bottom 0.1s ease-in-out 0.1s, border-left 0.1s ease-in-out 0.1s;
+  transition: border-top 0.1s ease-in-out, border-right 0.1s ease-in-out 0.2s,
+    border-bottom 0.1s ease-in-out 0.2s, border-left 0.1s ease-in-out 0.2s;
 }
 
 /* I'm trying to add a transition(which will be activated by hovering) to the border of the. I want each border to appear one after another*/
@@ -380,6 +380,7 @@ span {
   font-size: 1rem;
 }
 
+/* First break-point at 1280px */
 @media only screen and (max-width: 1280px) {
   .main-card,
   .cards {
@@ -396,27 +397,56 @@ span {
     flex: 0 1 cal(70%/3);
   }
 
-  #app-main-font,
-  .app-font {
-    display: inline-block;
-    color: #780000;
-    font-weight: bold;
-  }
-
   #app-main-font {
-    font-size: 1.5rem;
-    margin: 5%;
+    font-size: 1.8rem;
   }
 
   .app-font {
-    font-size: 1rem;
-    margin: 4% 2% 0 2%;
+    font-size: 1.2rem;
   }
 }
 
+/* Sexond brake-point at 900px */
 @media only screen and (max-width: 900px) {
-  .bar {
+  .bar,
+  .hero p {
     font-size: 1rem;
+  }
+
+  #search {
+    padding: 0.3em;
+  }
+
+  #search::placeholder {
+    font-size: 0.8rem;
+  }
+
+  #submit {
+    font-size: 0.85rem;
+  }
+
+  .hero h1 {
+    font-size: 2.5em;
+  }
+
+  .hero h2,
+  .bio h3,
+  .contact-me h3 {
+    font-size: 1.7rem;
+  }
+
+  .bio p,
+  #contact-links a,
+  #contact-links span {
+    font-size: 1.2rem;
+  }
+
+  #app-main-font {
+    font-size: 1.6rem;
+  }
+
+  #copy-right {
+    font-size: 0.7rem;
   }
 }
 
