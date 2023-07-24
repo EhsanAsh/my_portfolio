@@ -65,7 +65,7 @@ body {
 }
 
 .dropdown-content {
-  display: none;
+  /* display: none; */
   position: absolute;
   top: 2em;
   background-color: rgba(119, 141, 169, 0.9);
@@ -359,113 +359,38 @@ span {
   font-size: 1rem;
 }
 
-/* First break-point at 1280px */
-@media only screen and (max-width: 1280px) {
-  .main-card,
-  .cards {
-    height: auto;
-    margin: 1rem;
-    border-radius: 1rem;
-  }
+/* First break-point at 992px */
 
-  .main-card {
-    flex: 0 4 30%;
-  }
-
-  .cards {
-    flex: 0 1 cal(70%/3);
+@media only screen and (max-width: 992px) {
+  .bar {
+    font-size: 1.1rem;
   }
 
   #app-main-font {
-    font-size: 1.8rem;
+    font-size: 2.3rem;
   }
 
   .app-font {
-    font-size: 1.2rem;
-  }
-}
-
-/* Second brake-point at 900px */
-@media only screen and (max-width: 900px) {
-  .bar,
-  .hero p {
-    font-size: 1rem;
+    font-size: 1.5rem;
   }
 
-  #search {
-    padding: 0.3em;
-  }
-
-  #search::placeholder {
-    font-size: 0.8rem;
-  }
-
-  #submit {
-    font-size: 0.85rem;
-  }
-
-  .hero h1 {
-    font-size: 2.5em;
-  }
-
-  .hero h2,
-  .bio h3,
   .contact-me h3 {
     font-size: 1.7rem;
   }
 
-  .bio p,
   #contact-links a,
   #contact-links span {
     font-size: 1.2rem;
   }
 
-  #app-main-font {
-    font-size: 1.6rem;
-  }
-
   #copy-right {
+    align-self: center;
     font-size: 0.7rem;
   }
 }
 
-/* Third break point at 785px */
-@media only screen and (max-width: 785px) {
-  .main-content {
-    justify-content: center;
-    align-items: center;
-  }
-
-  .bio {
-    margin-left: 20%;
-  }
-
-  .cards-container {
-    flex-flow: column nowrap;
-  }
-
-  .main-card,
-  .cards {
-    margin: 0.7rem;
-    border-radius: 0.7rem;
-  }
-
-  #app-main-font {
-    font-size: 1.4rem;
-    margin: 3%;
-  }
-
-  .app-font {
-    font-size: 1rem;
-  }
-
-  #app-main-img {
-    width: 50%;
-    /* margin: 2% 0 3% 20%; */
-    border-radius: 4%;
-  }
+/* Second break-point at 768px */
+@media only screen and (max-width: 768px) {
 }
-
-/* Fourth break point at 600px */
 
 /* TODO: ToolTips + var + search input + add more style to contact links+ add containers and style them, in all sections.+ modify spans+modify contact me+responsive*/
