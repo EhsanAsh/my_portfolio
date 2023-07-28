@@ -391,6 +391,56 @@ span {
 
 /* Second break-point at 768px */
 @media only screen and (max-width: 768px) {
+  .bar {
+    font-size: 0.9rem;
+  }
+
+  .dropdown-content a,
+  #search::placeholder,
+  #submit {
+    font-size: 0.8rem;
+  }
+
+  #search {
+    padding: 0.25em;
+    border-right: 0.2em solid #415a77;
+  }
+
+  .hero h1 {
+    font-size: 2.3em;
+  }
+
+  .hero h2,
+  .bio h3 {
+    font-size: 1.5rem;
+  }
+
+  .hero p,
+  .bio p {
+    font-size: 1rem;
+  }
+
+  #app-main-font {
+    font-size: 1.8rem;
+  }
+
+  .app-font {
+    font-size: 1.2rem;
+  }
+
+  .contact-me h3 {
+    font-size: 1.5rem;
+  }
+
+  #contact-links a,
+  #contact-links span {
+    font-size: 1rem;
+  }
+
+  #copy-right {
+    align-self: center;
+    font-size: 0.5rem;
+  }
 }
 
 /* TODO: ToolTips + var + search input + add more style to contact links+ add containers and style them, in all sections.+ modify spans+modify contact me+responsive*/
