@@ -65,7 +65,7 @@ body {
 }
 
 .dropdown-content {
-  /* display: none; */
+  display: none;
   position: absolute;
   top: 2em;
   background-color: rgba(119, 141, 169, 0.9);
