@@ -44,6 +44,7 @@ body {
 .list {
   display: flex;
   justify-content: space-evenly;
+  list-style-type: none;
 }
 
 .list a {
@@ -65,7 +66,7 @@ body {
 }
 
 .dropdown-content {
-  /* display: none; */
+  display: none;
   position: absolute;
   top: 2em;
   background-color: rgba(119, 141, 169, 0.9);
@@ -440,6 +441,88 @@ span {
   #copy-right {
     align-self: center;
     font-size: 0.5rem;
+  }
+}
+
+/* Third break-point at 650px */
+@media only screen and (max-width: 650px) {
+  .bar {
+    background-color: rgba(252, 162, 17, 0.7);
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .info {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    background: #fff;
+    width: 100%;
+  }
+
+  .info:hover {
+    display: flex;
+  }
+
+  .list {
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+    list-style-type: none;
+  }
+
+  #search {
+    display: none;
+  }
+
+  .hero {
+    margin: 0;
+  }
+
+  .dropdown-content a,
+  #search::placeholder,
+  #submit {
+    font-size: 0.7rem;
+  }
+
+  #search {
+    padding: 0.2em;
+  }
+
+  .hero h1 {
+    font-size: 2em;
+  }
+
+  .hero h2,
+  .bio h3 {
+    font-size: 1.3rem;
+  }
+
+  .hero p,
+  .bio p {
+    font-size: 0.9rem;
+  }
+
+  #app-main-font {
+    font-size: 1.5rem;
+  }
+
+  .app-font {
+    font-size: 1rem;
+  }
+
+  .contact-me h3 {
+    font-size: 1.3rem;
+  }
+
+  #contact-links a,
+  #contact-links span {
+    font-size: 0.8rem;
+  }
+
+  #copy-right {
+    align-self: center;
+    font-size: 0.4rem;
   }
 }
 
